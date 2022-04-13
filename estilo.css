@@ -1,0 +1,274 @@
+body{
+    /* Created with https://www.css-gradient.com */
+    background: #082241;
+    background: -webkit-linear-gradient(top, #082241, #131313);
+    background: -moz-linear-gradient(top, #082241, #131313);
+    background: linear-gradient(to bottom, #082241, #131313);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    line-height: 1.3;
+}
+
+/* Header */
+
+header{
+    padding: 10px 30px;
+    position: fixed;
+    width: 100%;
+    /* box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2); */
+    background-color: #082241;
+    z-index: 10;
+}
+
+.menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu__logo{
+    display: flex;
+    color: #64ffda;
+    font-family: 'Roboto', sans-serif;
+}
+
+.menu__marca{
+    font-size: 50px;
+    color: #64ffda;
+}
+
+/* Main */
+
+main{
+    padding: 0 30px;
+}
+
+
+
+.one{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+
+.one__h1{
+    font-size: 8.3vw;
+    margin-bottom: 20vh;
+    color: #f5f5f5;
+    font-weight: 400;
+    font-family: 'Anek Bangla', sans-serif;
+    text-shadow: 2px 2px 15px #e4841655;
+}
+
+.one__h1::before{
+    content: "";
+    width: 2px;
+    height: 12vh;
+    background-color: #ffffff;
+    position: fixed;
+    bottom:0px;
+    right: 31px;
+    z-index: 1;
+}
+
+.one__imagen{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 60vh;
+    display: flex;
+    justify-content: center;
+}
+
+.one__img{
+    width: 20vh;
+    box-shadow: 10px 5px 20px rgba(0, 0, 0, 0.5);
+    border-radius: 2vh;
+}
+
+.one__icon{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: fixed;
+    right: 20px;
+    bottom: 14vh;
+    transform: scale(1.1);
+    z-index: 1;
+}
+
+/* Servicios */
+
+.servicios{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+
+.servi{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 6vh;
+}
+.servi__imagen{
+    width: 100%;
+}
+.servi__img{
+    width: 100%;
+    height: 40vh;
+    object-fit:cover;
+    filter: grayscale(100%);
+    transition: all 0.5s;
+    margin-bottom: 6vh;
+}
+
+.servi__h2{
+    width: 100%;
+    font-size: 3vh;
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+    text-align: left;
+    position: relative;
+    left: -1vw ;
+    top: -4vh;
+}
+.servi__h2::after{
+    content: "";
+    background-color: #ff6767;
+    width: 5em;
+    height: 2px;
+    position: absolute;
+    top: 120%;
+    left: 5em;
+}
+
+.servi__h2::before{
+    content: "";
+    background-color: #ff6767;
+    width: 8em;
+    height: 2px;
+    position: absolute;
+    top: 100%;
+}
+
+.servi__a{
+    background-color: rgb(255, 77, 90);;
+    padding: 13px 24px;
+    border-radius: 40px;
+    text-align: center;
+    color: #ffffff;
+    font-size: 1em;
+    font-weight: 500;
+    font-family: 'Fredoka One', cursive;
+}
+
+.servi__img:hover{
+    filter: grayscale(0);
+    transition: all 0.5s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ul{
+  display: none;
+}
+
+input:checked  ~ ul{
+  display:block;
+}
+
+input {
+  display: none;
+}
+
+label {
+  box-sizing: border-box;
+  display: inline-block;
+  border-radius: 5px;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  font-weight: bold;
+  text-align: center;
+  user-select: none;
+  transform: scale(1);
+}
+
+/* Estilo del boton cuando se pasa el mouse por encima*/
+label:hover{
+  background: rgba(134, 131, 131, 0);
+}
+
+/* Estilo del boton cuando el menú está expandido*/
+input:checked ~ label {
+  background: rgba(211, 211, 211, 0); 
+}
+
+ul{
+  margin-top:0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+
+}
+
+
+li {
+  display: block;
+  background: rgba(211, 211, 211, 0);
+  margin: 0;
+  padding: 10px;
+  list-style: none;
+  border-bottom: 1px solid grey;
+}
+
+/*Estilo cuando el mouse pasa encima de cada link del menu*/
+li:hover {
+  filter: brightness(110%);
+}
